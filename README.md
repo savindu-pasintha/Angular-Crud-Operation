@@ -1,6 +1,6 @@
 # Crud clone the project
 
-run this project to install npm module
+#run this project to install npm module
 #npm install 
 
 
