@@ -1,0 +1,17 @@
+
+<section>
+    <div>
+        <mat-form-field class="example-full-width">
+          <mat-label>Id</mat-label>
+          <input matInput placeholder="Your Id"  required type="number" (keyup)="getUserId($event)">
+        </mat-form-field>
+        <mat-error *ngIf="emptyIdCondition">
+          Please enter ID
+        </mat-error>
+      </div>
+
+    <div class="example-button-row">
+      <button *ngIf="enableButton"  mat-raised-button color="accent"  (click)="deleteMethodForButton()">Delete</button>
+    </div>
+</section>
+

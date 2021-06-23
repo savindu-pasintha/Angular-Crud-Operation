@@ -1,0 +1,34 @@
+table{
+    position: relative;
+    width:100%;
+    height:auto;
+
+}
+
+thead{
+    position: relative;
+    width:100%;
+    height:auto;
+
+}
+
+tr{
+    position: relative;
+    width:100%;
+    height:auto;
+     
+}
+
+td{
+    position: relative;
+    width:20%;
+    height:auto;
+     
+}
+
+img{
+    position: relative;
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}

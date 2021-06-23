@@ -1,0 +1,11 @@
+<div>
+    <p *ngIf="conditionTrueVariable">This a Learning Page - variable access login.ts file -> {{titleVariable}}</p>
+    <p *ngIf="conditionFalseVariable">Condition False using Hide</p>
+
+    <p>toWay Data Binding {{titleVariable}}</p>
+    <!-- variable value put to input tag-->
+    <input type="text" [value]="titleVariable" (keyup)="onKey($event)">
+    <p>{{ inputTagValue }}</p>
+    <p>Array data view as list</p>
+    <p *ngFor="let item of arrVariable">{{item}}</p>
+</div>

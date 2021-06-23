@@ -1,0 +1,30 @@
+
+<section>
+
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Your name"  required type="text" (keyup)="getUserName($event)">
+      </mat-form-field>
+      <mat-error *ngIf="emptyNameCondition">
+        Please enter Name
+      </mat-error>
+    </div>
+  
+    <div>
+      <mat-form-field class="example-full-width">
+        <mat-label>Job </mat-label>
+        <input matInput matInput placeholder="Job Title" required type="text"  (keyup)="getUserJob($event)">
+      </mat-form-field>
+      <mat-error *ngIf="emptyJobCondition">
+        Please enter Job Title
+      </mat-error>
+    </div>
+   
+
+    <div class="example-button-row">
+      <button *ngIf="enableButton"  mat-raised-button color="accent"  (click)="createMethodForButton()">Sent</button>
+    </div>
+
+  
+</section>

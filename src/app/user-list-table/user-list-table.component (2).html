@@ -1,0 +1,41 @@
+
+<div>
+    <mat-paginator [length]="100" [pageSize]="100" [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col ">USER ID</th>
+                <th scope="col ">Avater</th>
+                <th scope="col ">Email</th>
+                <th scope="col ">First name</th>
+                <th scope="col ">Last Name</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let x of sampledata">
+                <td>
+                    <p>{{x.id}}</p>
+                </td>
+
+                <td>
+                    <img src={{x.avatar}} alt={{x.id}} >
+                 </td>
+                <td>
+                    <p>{{x.email}}</p>
+                </td>
+                <td>
+                    <p>{{x.first_name}}</p>
+                </td>
+                <td>
+                    <p>{{x.last_name}}</p>
+                </td>
+              
+
+            </tr>
+        </tbody>
+
+    </table>
+
+</div>
